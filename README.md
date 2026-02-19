@@ -20,7 +20,7 @@ A modern starter template for building 3D geospatial applications with Cesium an
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/cesium-nuxt-starter-kit.git
+   git clone https://github.com/geoaitwinverse/cesium-nuxt-starter-kit.git
    cd cesium-nuxt-starter-kit
    ```
 
