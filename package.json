@@ -1,0 +1,52 @@
+{
+  "name": "bontang-v2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build && node scripts/copy-cesium.js",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare && cp -r node_modules/cesium/Build/Cesium public/cesium",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck",
+    "start": "node .output/server/index.mjs"
+  },
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10.5.0"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.82",
+    "@iconify-json/simple-icons": "^1.2.63",
+    "@nuxt/image": "2.0.0",
+    "@nuxt/ui": "^4.3.0",
+    "@pinia/nuxt": "0.11.3",
+    "@unovis/ts": "^1.6.2",
+    "@unovis/vue": "^1.6.2",
+    "@vueuse/nuxt": "^14.1.0",
+    "cesium": "^1.130.0",
+    "chart.js": "^4.5.1",
+    "chartjs": "^0.3.24",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^4.1.0",
+    "jwt-decode": "^4.0.0",
+    "maplibre": "^0.0.1-security",
+    "nuxt": "^4.2.2",
+    "pinia": "^3.0.4",
+    "pmtiles": "^4.3.2",
+    "vue-cesium": "^3.2.12",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.12.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/geojson": "^7946.0.16",
+    "@types/maplibre-gl": "^1.13.2",
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3",
+    "vite-plugin-cesium": "^1.2.23",
+    "vue-tsc": "^3.2.1"
+  },
+  "packageManager": "npm@10.5.0"
+}
